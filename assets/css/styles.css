@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+body {
+    max-width: 800px;
+    margin: auto;
+    min-height: 100%;
+
+    font-family: 'Nunito', sans-serif;
+    background-color: #F3F3F3
+}
+
+.overlay-bg {
+    background-image: url(../img/photo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+header {
+    display: flex;
+    margin: 0 0 5vh 0;
+    justify-content: center;
+
+    background: #F97B32;
+}
+
+h1 {
+    margin: 10px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 15px 0;
+    font-size: 28px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+h2 i {
+    font-size: 42px;
+    margin: 0 15px 0 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .section-1 {
+    max-width: 400px;
+    background-color: rgba(243, 243, 243, 85%)
+}
+
+main .section-1 header {
+    margin: 0;
+    background-color: #F97B32;
+}
+
+main .section-2 {
+    width: 800px;
+}
+
+main .section-2 header{
+    margin: 7vh 0 0 0;
+    background-color: rgba(243, 243, 243, 85%) 
+}
+
+main .section-2 header h2 {
+    color: #F97B32;
+}
+
+main form {
+    display: flex;
+    padding: 35px;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    margin: 0 0 15px 0;
+    border: 2px solid #F97B32;
+    border-radius: 2.5px;
+    background: #F3F3F3;
+}
+
+form input::placeholder {
+    color: #F97B32
+}
+
+
+form .col {
+    width: 100%;
+    display: flex;
+}
+form .col-1 {
+    width: 50%;
+    margin: 0 15px 0 0;
+}
+
+form .col-2 {
+    width: 50%;
+    margin: 0 0 0 15px;
+}
+
+form .checkbox {
+    display: flex;
+    align-items: center;
+}
+
+form .checkbox label {
+    color: #F97B32;
+}
+
+form .checkbox input {
+    width: 38;
+    padding: 0;
+    margin: 0 10px 0 0;
+
+    cursor: pointer;
+    border: 2px solid #F97B32;
+    border-radius: 5px;
+    background: #F3F3F3;
+}
+
+button {
+    text-transform: capitalize;
+}
+
+form button {
+    border: 0;
+    width: 40%;
+    height: 40px;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background: #F97B32;
+}
+
+.section-2 #output {
+    overflow: hidden;
+}
+
+.section-2 table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse
+}
+
+.section-2 table tr {
+    text-align: left;
+    padding: 15px;
+    color: #F97B32;
+    background-color: #F97B32;
+}
+
+.section-2 table th button {
+    padding: 25px 0px 25px 20px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #F97B32;
+}
+
+.section-2 table .car-info {
+    background: #F3F3F3;
+
+}
+
+.section-2 table .car-info:nth-child(odd) {
+    background: #FFFFFF;
+}
+
+.section-2 table tr td  {
+    padding: 25px 0px 25px 20px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    background: #F97B32;
+}
+
+footer p {
+    padding: 25px;
+    margin: 0;
+    color: #FFFFFF;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYH BIL</title>
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="overlay-bg">
+        <!-- Header för rubrik på hemsida -->
+        <header>
+            <h1> >KYHBIL< </h1>
+        </header>
+
+        <!-- Inputfält för att mata in fordonsinformation -->
+        <main>
+            <div class="section-1">
+                <header>
+                    <h2><i class="fas fa-car"></i>Fordons infromation</h2>
+                </header>
+                <form id="form">
+                    <div class="col">
+                        <div class="col-1">
+                            <input type="text" placeholder="Märke" id="brand">
+                            <input type="text" placeholder="Modell" id="model">
+                            <input type="number" placeholder="Modellår" id="year">
+                            <input type="number" placeholder="Miltal" id="milage">
+                        </div>
+                        <div class="col-2">
+                            <input type="text" placeholder="Färg" id="colour">
+                            <input type="text" placeholder="Växellåda" id="gearbox">
+                            <input type="number" placeholder="Pris" id="price">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <label for="checkbox">Begagnad</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" name="button" onclick="getCarValues();">Publicera</button>
+                </form>
+            </div>
+
+            <div class="section-2">
+                <header>
+                    <h2> Aktuella erbjudanden på marknadsplatsen</h2>
+                </header>
+                <!--Output fältet för bilarna som ska säljas -->
+                <div id="output">
+                    
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created by ...</p>
+        </footer>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
