@@ -18,4 +18,4 @@ Det är kopplat till repot och branchen main.
 <br>
 <br>
 
-### ~> ***Hacked by Lukas, Patryk, Rasha och Simon*** <~
+**Hacked by Lukas, Patryk, Rasha och Simon**
