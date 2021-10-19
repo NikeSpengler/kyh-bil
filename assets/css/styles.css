@@ -74,9 +74,21 @@ main .section-2 header h2 {
     color: #F97B32;
 }
 
+main #error-output {
+    position: relative;
+    text-align: center;
+}
+
+main #error-output p {
+    margin: 0;
+    padding: 15px;
+    color: #ff0033;
+    background: #FFCCCC;
+}
+
 main form {
     display: flex;
-    padding: 35px;
+    padding: 15px 35px 35px 35px;
     flex-direction: column;
 }
 
@@ -119,10 +131,10 @@ form .checkbox label {
 }
 
 form .checkbox input {
-    width: 38;
     padding: 0;
     margin: 0 10px 0 0;
 
+    text-transform: capitalize;
     cursor: pointer;
     border: 2px solid #F97B32;
     border-radius: 5px;
