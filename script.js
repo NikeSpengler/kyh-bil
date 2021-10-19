@@ -135,9 +135,14 @@ function createTable() {
 	});
 
 	carOutput += "</table>";
-
 	document.getElementById("output").innerHTML = carOutput;
 }
+
+function validateValue(inputField)
+      {
+        if(inputField==null || inputField=="") return "No Input";
+        else return inputField;
+      }
 
 function filterCars(sortBy) {
 	output = document.getElementById("output");
@@ -155,6 +160,5 @@ function filterCars(sortBy) {
 			}
 		}
 	}
-
 	createTable(cars);
 }
