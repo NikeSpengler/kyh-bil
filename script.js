@@ -2,61 +2,61 @@ let cars = [
 	{
 		brand: 'Volvo',
 		model: 'V90',
-		year: '2019',
+		year: 2019,
 		milage: '0',
 		colour: 'Vit',
 		gearbox: 'Automat',
-		price: '467000',
+		price: 467000,
 		used: 'Ny'	
 	},
 	{
 		brand: 'Audi',
 		model: 'A6',
-		year: '2004',
-		milage: '54500',
+		year: 2004,
+		milage: 54500,
 		colour: 'Silver',
 		gearbox: 'Manuell',
-		price: '28500',
+		price: 28500,
 		used: 'Begagnad'
 	},
 	{
 		brand: 'BMW',
 		model: 'E42',
-		year: '2000',
-		milage: '4300',
+		year: 2000,
+		milage: 4300,
 		colour: 'Grå',
 		gearbox: 'Automat',
-		price: '10000',
+		price: 1000,
 		used: 'Begagnad'
 	},
 	{
 		brand: 'Jeep',
 		model: 'Wrangler',
-		year: '2016',
-		milage: '2900',
+		year: 2016,
+		milage: 2900,
 		colour: 'Svart',
 		gearbox: 'Manuell',
-		price: '120000',
+		price: 120000,
 		used: 'Begagnad'
 	},
 	{
 		brand: 'BMW',
 		model: 'E92',
-		year: '2012',
-		milage: '6900',
+		year: 2012,
+		milage: 6900,
 		colour: 'Gul',
 		gearbox: 'Automat',
-		price: '90000',
+		price: 90000,
 		used: 'Begagnad'
 	},
 	{
 		brand: 'Volvo',
 		model: 'V70',
-		year: '2004',
-		milage: '29000',
+		year: 2004,
+		milage: 29000,
 		colour: 'Marin blå',
 		gearbox: 'Automat',
-		price: '10000',
+		price: 10000,
 		used: 'Begagnad'
 	},
 ]
@@ -107,12 +107,10 @@ function getCarValues() {
 
 function createTable() {
 	let carOutput = "<table><tr>";
-
-	// for loop to get attribute names and pu them in the first row in array
 	let th = `
 		<th><button type='button' onclick='filterCars(this);' id='brand'>Märke</button></th>
 		<th><button type='button'>Modell</button></th>
-		<th><button type='button' onclick='filterCars(this);' id='model'>Modellår</button></th>
+		<th><button type='button' onclick='filterCars(this);' id='year'>Modellår</button></th>
 		<th><button type='button' onclick='filterCars(this);' id='milage'>Miltal</button></th>
 		<th><button type='button'>Färg</button></th>
 		<th><button type='button' onclick='filterCars(this);' id='gearbox'>Växellåda</button></th>
@@ -121,8 +119,6 @@ function createTable() {
 	`;
 
 	carOutput += th 
-
-	// forEach loop for each object in the array (each row will be an object)
 	cars.forEach((item) => {
 		carOutput += "<tr class='car-info'>";
 
@@ -138,11 +134,10 @@ function createTable() {
 	document.getElementById("output").innerHTML = carOutput;
 }
 
-function validateValue(inputField)
-      {
-        if(inputField==null || inputField=="") return "No Input";
-        else return inputField;
-      }
+function validateValue(inputField){
+	if(inputField==null || inputField=="") return "No Input";
+	else return inputField;
+}
 
 function filterCars(sortBy) {
 	output = document.getElementById("output");
@@ -151,14 +146,15 @@ function filterCars(sortBy) {
 
 	function sortOn(prop) {
 		return function(a, b) {
-			if(a[prop] < b[prop]) {
-				return -1
-			} else if(a[prop] > b[prop]){
-				return 1
+			if (a[prop] < b[prop]) {
+				return -1;
+			} else if (a[prop] > b[prop]){
+				return 1;
 			} else {
-				return 0
+				return 0;
 			}
 		}
 	}
+
 	createTable(cars);
 }
